@@ -32,7 +32,7 @@ export default function About() {
         </p>
 
         <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
-          I have 2.5+ years of professional experience at Accenture, where I
+          I have 3+ years of professional experience at Accenture, where I
           have worked across the full stack using React, Angular, Node.js,
           Express.js, and MongoDB while collaborating in Agile teams.
         </p>

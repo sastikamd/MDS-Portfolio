@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "Movie Booking Web Application",
     description: "Full-stack movie booking platform with integrated payment gateway and email notifications.",
-    image: "/assets/project1.png",
+    image: "/assets/proj1.png",
     techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe API", "SendGrid", "JWT"],
     links: {
       live: "https://moviefnsastika.netlify.app/",
@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     title: "Redbus Clone",
     description: "Clone of redBus bus ticketing and hiring platform built with full-stack MERN technologies.",
-    image: "/assets/project1.png",
+    image: "/assets/PROJ2.png",
     techStack: ["React", "MongoDB", "Mongoose", "Express", "Tailwind"],
     links: {
       live: "https://redbus-clone-sastika.netlify.app/",
@@ -31,7 +31,7 @@ const projects = [
     id: 3,
     title: "Inventory Tracker",
     description: "MERN project to create, read, update and delete product data with MongoDB integration.",
-    image: "/assets/project1.png",
+    image: "/assets/proj3.png",
     techStack: ["React", "HTML", "MongoDB", "ExpressJS", "NodeJS"],
     links: {
       live: "https://inventorysastika.netlify.app/products",
