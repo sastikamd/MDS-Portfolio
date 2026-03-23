@@ -18,7 +18,7 @@ This is a personal portfolio website built using Vite + React, Tailwind CSS, and
 
 1. Clone your repository:
    ```sh
-   git clone <your-repo-url>
+   git clone <https://github.com/sastikamd/MDS-Portfolio.git>
    ```
 2. Navigate to the project directory:
    ```sh
