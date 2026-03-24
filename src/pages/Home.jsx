@@ -6,15 +6,20 @@ import { BsGithub } from "react-icons/bs";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
+  const slideUp = {
+    initial: { opacity: 0, y: 48 },
+    animate: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="mt-20" id="home">
       <div className="flex justify-between py-10 items-center px-5 lg:px-28 lg:flex-row flex-col-reverse">
 
         <motion.div
           className="lg:w-[45%]"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          initial={slideUp.initial}
+          animate={slideUp.animate}
+          transition={{ duration: 0.85, ease: "easeOut" }}
         >
 
           <motion.div
@@ -22,11 +27,11 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             variants={{
-              hidden: { opacity: 0, y: 20 },
+              hidden: { opacity: 0, y: 30 },
               visible: {
                 opacity: 1,
                 y: 0,
-                transition: { staggerChildren: 0.2, ease: "easeInOut" },
+                transition: { staggerChildren: 0.16, ease: "easeOut" },
               },
             }}
           >
@@ -55,9 +60,9 @@ export default function Home() {
 
           <motion.p
             className="text-[#71717A] text-sm lg:text-base mt-5"
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 1 }}
+            transition={{ delay: 0.24, duration: 0.75, ease: "easeOut" }}
           >
             Building scalable web applications with modern technologies and best
             practices. Passionate about clean code, problem-solving, and
@@ -66,9 +71,9 @@ export default function Home() {
 
           <motion.div
             className="flex items-center gap-x-5 mt-10 lg:mt-14"
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 1 }}
+            transition={{ delay: 0.34, duration: 0.75, ease: "easeOut" }}
           >
             {[
               { Icon: BiLogoGmail, href: "mailto:sastimeena@gmail.com" },
@@ -92,9 +97,9 @@ export default function Home() {
 
         <motion.div
           className="lg:w-[55%] w-full h-[410px] lg:h-[570px] overflow-hidden rounded-2xl"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          initial={{ opacity: 0, y: 56 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.95, ease: "easeOut", delay: 0.12 }}
         >
           <img className="h-full w-full object-cover object-[center_20%]" src="/assets/page1.png" alt="Sastika working illustration" />
         </motion.div>

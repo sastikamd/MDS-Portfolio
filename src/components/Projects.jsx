@@ -53,9 +53,9 @@ export default function Projects() {
           <motion.div
             key={project.id}
             className={`flex justify-between items-center flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 42 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", stiffness: 80, damping: 10, delay: index * 0.2 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.2 }}
             viewport={{ once: true }}
           >
             <div className="lg:w-[500px] w-full rounded-2xl overflow-hidden">

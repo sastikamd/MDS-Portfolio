@@ -97,16 +97,22 @@ export default function Certifications() {
     <div className="px-5 lg:px-28 my-8 lg:my-16" id="certifications">
       <motion.h2
         className="text-2xl lg:text-4xl text-center"
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.75, ease: "easeOut" }}
         viewport={{ once: true }}
       >
         My <span className="font-extrabold">Certifications</span>
       </motion.h2>
 
       <div className="mt-7 lg:mt-12">
-        <div className="flex justify-center gap-3 mb-5">
+        <motion.div
+          className="flex justify-center gap-3 mb-5"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.08 }}
+          viewport={{ once: true }}
+        >
           <button
             type="button"
             onClick={prevCard}
@@ -123,7 +129,7 @@ export default function Certifications() {
           >
             <HiChevronRight size={18} />
           </button>
-        </div>
+        </motion.div>
 
         <div
           className="relative h-[340px] lg:h-[380px] max-w-4xl mx-auto overflow-visible no-scrollbar overscroll-x-contain"

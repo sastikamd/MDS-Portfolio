@@ -13,16 +13,16 @@ export default function Contact() {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0 }}
-      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-      transition={{ duration: 0.8 }}
+      initial={{ opacity: 0, y: 34 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 34 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
       className='lg:my-16 lg:px-28 my-8 px-5'
       id='contact'
     >
       <motion.h2
-        initial={{ y: -50, opacity: 0 }}
-        animate={isInView ? { y: 0, opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 0.8 }}
+        initial={{ y: 34, opacity: 0 }}
+        animate={isInView ? { y: 0, opacity: 1 } : { y: 34, opacity: 0 }}
+        transition={{ duration: 0.75, ease: "easeOut" }}
         className='text-2xl lg:text-4xl text-center'
       >
         Contact <span className='font-extrabold'>Me</span>
@@ -30,9 +30,9 @@ export default function Contact() {
 
       <div className='flex justify-between items-center mt-8 lg:mt-16 flex-col lg:flex-row'>
         <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          animate={isInView ? { x: 0, opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ y: 34, opacity: 0 }}
+          animate={isInView ? { y: 0, opacity: 1 } : { y: 34, opacity: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.08 }}
           className='lg:w-[40%]'
         >
           <form className='w-full space-y-3 lg:space-y-5'>
@@ -42,9 +42,9 @@ export default function Contact() {
             <textarea className='resize-none border-2 px-5 py-3 h-32 border-black placeholder:text-[#71717A]  rounded text-sm w-full' placeholder='How can I help?*'></textarea>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0 }}
-              transition={{ duration: 0.8 }}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0.16 }}
               className='flex justify-between gap-3 lg:gap-5 flex-col lg:flex-row'
             >
               <motion.button
@@ -79,9 +79,9 @@ export default function Contact() {
         </motion.div>
 
         <motion.div
-          initial={{ x: 50, opacity: 0 }}
-          animate={isInView ? { x: 0, opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ y: 34, opacity: 0 }}
+          animate={isInView ? { y: 0, opacity: 1 } : { y: 34, opacity: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.16 }}
           className='lg:w-1/2'
         >
           <div className='font-extrabold text-2xl lg:text-5xl mt-5 lg:mt-0 space-y-1 lg:space-y-3'>

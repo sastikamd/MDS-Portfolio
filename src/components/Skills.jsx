@@ -123,9 +123,9 @@ export default function Skills() {
 
         <motion.h2
           className="text-2xl lg:text-4xl text-center"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.75, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           My <span className="font-extrabold">Skills</span>
@@ -137,8 +137,8 @@ export default function Skills() {
               <motion.div
                 key={skill.name}
                 className="bg-white border-2 hover:bg-black hover:text-white transition-all cursor-pointer border-black rounded p-3 h-32 lg:h-36 flex flex-col items-center justify-center gap-3"
-                initial={{ opacity: 0, y: 8 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.03 }}
                 viewport={{ once: true }}
               >
@@ -150,9 +150,9 @@ export default function Skills() {
         ) : (
           <motion.div
             className="mt-7 lg:mt-16"
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.55, ease: "easeOut" }}
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               {skillGroups.map((group) => (
@@ -191,9 +191,9 @@ export default function Skills() {
       <div className="bg-black w-full my-8 py-8 lg:my-16 lg:py-16">
         <motion.h2
           className="text-2xl lg:text-4xl text-center text-white"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.75, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           My <span className="font-extrabold">Experience</span>
@@ -205,12 +205,11 @@ export default function Skills() {
             <motion.div
               key={exp.id}
               className="bg-black p-5 border border-[#D4D4D8] rounded-md hover:bg-[#27272A] transition-all cursor-pointer"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               transition={{
-                type: "spring",
-                stiffness: 100,
-                damping: 10,
+                duration: 0.75,
+                ease: "easeOut",
                 delay: index * 0.2,
               }}
               viewport={{ once: true }}
